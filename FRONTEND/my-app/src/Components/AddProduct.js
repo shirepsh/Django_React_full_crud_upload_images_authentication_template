@@ -62,12 +62,15 @@ const AddProduct = () => {
 
   return (
     <div>
-      <button onClick={stam}>print</button> 
+      <br/>
+      <h5>add product</h5>
+      <br/>
+      {/* <button onClick={stam}>print</button>  */}
       <form onSubmit={handleImageUpload}>
-        product desc: <input type="text" onChange={handletDescChange} /> <br/>
-        product price: <input type="text" onChange={handlePriceChange} />  <br/>
-        image: <input type="file" onChange={handleImageChange} />  <br/>
-        <button type="submit">Upload Image</button>  <br/>
+        product desc: <input type="text" onChange={handletDescChange} /> <br/><br/>
+        product price: <input type="text" onChange={handlePriceChange} />  <br/><br/>
+        image: <input type="file" onChange={handleImageChange} />  <br/><br/>
+        <button type="submit">add product</button>  <br/><br/>
       </form>
       {imageUrl && <img src={imageUrl} alt="Uploaded Image" />}
     </div>
